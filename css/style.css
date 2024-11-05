@@ -30,14 +30,15 @@
 .header-bottom {
      background-color: #00008b;
      padding: 50px;
+     display: flex;
+     justify-content: center;
 }
 
 .hero {
     background-color: #ee82ee;
     border: 1px dashed black;
     padding: 160px;
-    max-width: 60%;
-    margin-left: 20%;
+    width: 60%;
     
 }
 
