@@ -72,28 +72,27 @@
 
 
 section{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #block {
     display: flex;
     justify-content: center;
-    
+    border: 1px dashed black;
 }
 
-#block .col-big {
+.col-big {
     padding: 200px;
     width: 60%;
     background-color: #1e90ff;
-    border: 1px dashed black;
     
 }
 
-#block .col-small {
+.col-small {
     width: 40%;
     background-color: #ffc0cb;
-    border: 1px dashed black;
+    
     
 }
 
@@ -104,13 +103,13 @@ section{
 }
 
 
-#block-2 .col-small {
+.col-small {
     width: 40%;
     background-color: #ffc0cb;
     border: 1px dashed black;
 }
 
-#block-2 .col-big {
+.col-big {
     padding: 200px;
     width: 60%;
     background-color: #1e90ff;
