@@ -115,3 +115,15 @@ section{
     background-color: #1e90ff;
     border: 1px dashed black;
 }
+
+#block-3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.col-bigger{
+    padding: 300px;
+    background-color: #228b22;
+   
+}
