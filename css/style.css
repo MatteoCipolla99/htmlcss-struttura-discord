@@ -7,6 +7,67 @@
   margin: 0;
   padding: 0;
 }
+/*----------------
+        DEBUG
+-----------------*/
+.debug .header-top {
+    background-color: #add8e6;
+}
+.debug .header-bottom {
+    background-color: #00008b;
+}
+.debug .header-top > .container {
+    background-color: #daa520; 
+}
+.debug .header-top .logo,
+.debug .header-top .main-nav,
+.debug .header-top .login {
+    border: 1px dashed black;
+}
+.debug .header-bottom .hero {
+    min-height: 400px;
+    background-color: #ee82ee;
+    border: 1px dashed black;
+}
+
+.debug .col-big {
+    background-color: #1e90ff;
+    border: 1px dashed black;
+}
+.debug .col-small {
+    background-color: #ffc0cb;
+    border: 1px dashed black;
+}
+.debug section > .container {
+    min-height: 400px;
+}
+.debug section:last-child > .container {
+    background-color: #228b22;
+    border: 1px dashed black;
+    min-height: 800px;
+}
+
+.debug .footer-top > .container {
+    min-height: 500px;
+}
+.debug .footer-top .col-small {
+    background-color: #f08080;
+}
+.debug .footer-top .col-big {
+    background-color: #20b2aa;
+}
+.debug .footer-top .col-big > .col-inner {
+    border: 1px dashed #fff;
+}
+.debug .footer-bottom > .container {
+    background-color: #7fffd4;
+}
+
+.debug .footer-bottom .logo,
+.debug .footer-bottom .btn {
+    border: 1px dashed black;
+    background-color: #ffb6c1;
+}
 
 /*----------------
         GENERAL
@@ -17,6 +78,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.bg-gray {
+    background-color: #d3d3d3;
+}
 
 /*----------------
         HEADER
@@ -24,106 +88,114 @@
 
 .header-top {
     background-color: #add8e6;
-    padding: 15px 0;
+    padding: 16px 0;
 }
 
 .header-bottom {
-     background-color: #00008b;
-     padding: 50px;
-     display: flex;
-     justify-content: center;
+     padding: 30px 0;
+     
 }
-
-.hero {
-    background-color: #ee82ee;
-    border: 1px dashed black;
-    padding: 160px;
-    width: 60%;
-    
-}
-
 .header-top > .container {
     display: flex;
-    background-color: #daa520;
 }
 
-
-.header-top > .container > * {
-    border: 1px dashed black;
-    padding: 6px 6px;
+.header-top .logo,
+.header-top nav,
+.header-top .login {
+    padding: 6px;
 }
 
-.header-top .logo, .header-top .login{
+.header-top .logo, .header-top .login {
     width: 20%;
 }
 
-.header-top .login{
+.header-top .login {
     text-align: right;
 }
 
-.header-top nav {
-    flex-grow: 1;
-    text-align: center;
-}
-
-/*----------------
-        MAIN
------------------*/
-
-
-section{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-#block {
-    display: flex;
-    justify-content: center;
-    border: 1px dashed black;
-}
-
-.col-big {
-    padding: 200px;
+.header-top .main-nav {
     width: 60%;
-    background-color: #1e90ff;
-    
 }
 
-.col-small {
-    width: 40%;
-    background-color: #ffc0cb;
-    
-    
-}
-
-#block-2{
+.main-nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    
+    gap: 10px
 }
 
-
-.col-small {
-    width: 40%;
-    background-color: #ffc0cb;
-    border: 1px dashed black;
+.main-nav ul a {
+    text-decoration: none;
+    color: inherit
 }
 
-.col-big {
-    padding: 200px;
+.header-bottom .hero {
+    max-width: 920px;
+}
+
+/*-----------
+    MAIN
+------------*/
+section {
+    padding: 50px 0;
+}
+
+section:nth-child(2n) {
+    background-color: #d3d3d3;
+}
+
+section > .container {
+    display: flex;
+}
+
+section .col-big {
     width: 60%;
-    background-color: #1e90ff;
-    border: 1px dashed black;
+}
+section .col-small {
+    width: 40%;
 }
 
-#block-3{
+/*-----------
+    FOOTER
+------------*/
+footer {
+    background-color: #23272a;
+}
+
+.footer-top {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-top > .container {
     display: flex;
-    justify-content: center;
-    
 }
 
-.col-bigger{
-    padding: 300px;
-    background-color: #228b22;
-   
+.footer-top .col-small {
+    width: 30%;
 }
+.footer-top .col-big {
+    width: 70%;
+    display: flex;
+}
+
+.footer-top .col-big > .col-inner {
+    width: 25%;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #ffffff;
+}
+
+.footer-bottom > .container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .logo,
+.footer-bottom .btn {
+    padding: 6px 14px;
+}
+
